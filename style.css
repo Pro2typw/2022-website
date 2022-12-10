@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html, body {
+  /* div#main_MF */
+
+scroll-behavior: smooth;
+max-width: 100%;
+height: 4794px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+  margin: 0px;
+}
+.page{
+  /* div#masterPage */
+
+
+  position: absolute;
+  height: 4794px;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+}
+
+.button{
+    text-anchor: middle;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    float: right;
+    padding: 10px;
+    border: solid black 1px;
+    transition: all 0.2s ease, visibility 0s;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    color: #FFFFFF;
+    font-family: montserrat,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+.bOne{
+  right: 25% !important;
+}
+.bTwo{
+  right: 20% !important;
+}
+
+.bThree{
+  right: 13% !important;
+}
+
+.bFour{
+  right: 5% !important;
+  background-color: #000;
+  
+}
+.button:hover
+{
+  background-color: white;
+  color: black;
+}
+.nav{
+  width: 100%;
+  height: 9%;
+  
+  position: fixed;
+  background: transparent;
+  z-index: 300;
+  transition: all 0.5s ease, visibility 0.5s;
+}
+.nav .inner{
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.nav.scrolled{
+  background-color: #fff;
+  border-bottom: solid black;
+}
+.nav .logo{
+  padding-left: 15%;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .2rem;
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 6px;
+  cursor: not-allowed;
+}
+
+.header-wrapper
+{
+  position: absolute;
+  height: 1155px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+}
+
+.cutoff-wrapper
+{
+  /* div */
+
+
+position: absolute;
+height: 349px;
+  width: 100%;
+  top: 78%;
+left: 0px;
+right: 0px;
+
+
+}
+
+.cutoff-wrapper .cutoff{
+  
+  border: solid 2px #000;
+ background: #000000;
+  height: 349px;
+}
+.gradient{
+  /* section#comp-kn4o4tjg */
+
+    position: absolute;
+    height: 634px;
+    left: 0px;
+    right: 0px;
+    top: 24%;
+    background: linear-gradient(0deg, #000000 0%, rgba(180, 195, 234, 0) 100%);
+    z-index: 200;
+}
+.header-wrapper .bg{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  position: absolute;
+  max-width: 100%;
+  background: url("/assets/Screenshot 2022-12-09 194049.png"), #000000;
+}
+.bg .video{
+  max-width: 100%;
+}
+
+.header-wrapper .text-wrapper
+{
+  position: absolute;
+  height: 877px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+}
+.header-wrapper .text-wrapper .title
+{
+  position: absolute;
+ 
+     height: 10%;
+  left: calc(50% - 337.11px/2 + 0.1px);
+  top: 8%;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 96px;
+  /* or 150% */
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 5.12px;
+  
+  color: #000000;
+  z-index: 199;
+}
+.header-wrapper .text-wrapper .subtitle{
+  /* Our robot is designed to win */
+
+
+position: absolute;
+width: 375.4px;
+height: 4%;
+left: calc(50% - 375.4px/2 - 0.91px);
+top: 22%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 43px;
+/* or 180% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 1.2px;
+z-index: 199;
+color: #000000;
+
+}
+.cutoff .sponsored .card{
+  position: absolute;
+  width: 10.4%;
+  height: 57.345678787774564756457%;
+  background: #252525;
+  left: 45%;
+  top: 31%;
+}
+
+.cutoff{
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* section two */
+.section-two{
+  /* section#comp-l9davx13 */
+  position: absolute;
+  height: 710px;
+  left: 0px;
+  right: 0px;
+    top: 1250px;
+  
+}
+.section-two .wrapper{
+  /* div */
+  position: absolute;
+  
+  height: 710px;
+  width: 100%;
+  top: 0px;
+
+}
+.section-two .left{
+  
+position: absolute;
+height: 708px;
+left: 0px;
+top: 1px;
+border: solid #000;
+width: 40%;
+}
+.section-two .left .bg{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  
+  background: url("/assets/section-two.webp"), #000000;
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  background-size: 41%;
+  background-position: 1% 1%;
+}
+.section-two .right
+{
+  font-family: 'Montserrat';
+    height: 708px;
+  right: 0px;
+  top: 1px;
+  border: solid #000;
+  width: 60%;
+  position: absolute;
+}
+
+.section-two .wraooer .right .header{
+  /* What is the FIRST Competition? */
+  position: absolute;
+  right: 57%;
+  top: 3%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  
+  color: #000000;
+
+
+}
+.section-two .wrapper .right .text{
+  font-family: 'Montserrat';
+  position: absolute;
+  top: 13%;
+  right: 18%;
+  left: 15%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 140% */
+  
+  display: flex;
+  align-items: center;
+  
+  color: #000000;
+}
+
