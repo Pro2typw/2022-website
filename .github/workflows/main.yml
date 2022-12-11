@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      
+      - uses: actions/checkout@v2
       - name: HTML5 Validator
         # You may pin to the exact commit or the version.
         # uses: Cyb3r-Jak3/html5validator-action@41633d488eb36e18fd1a95ffc83daf1bf22a75bd
