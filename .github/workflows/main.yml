@@ -1,6 +1,7 @@
 name: main checks
 
 on:
+
   push:
     branches: [ $default-branch ]
   pull_request:
