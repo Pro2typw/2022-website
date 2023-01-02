@@ -1,0 +1,161 @@
+.carousel{
+    width:100%;
+    height:1080px;
+    background-color: #000000;
+}
+.carousel .one{
+    position: absolute;
+    width: 532px;
+    height: 549px;
+    left: 78px;
+    top: 267px;
+    background: #111111;
+}
+.carousel .one .title{
+    padding-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.carousel .one .version {
+    padding-top: 20px;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    
+        color: #FFFFFF;
+}
+.carousel .one .image{
+    padding-top: 20px;
+    padding-left: 50px;
+    
+    width: 481px;
+    height: 322px;
+    
+}
+.carousel .one .description {
+    padding-top: 20px;
+    padding-left: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+.carousel .two{
+    position: absolute;
+    width: 638px;
+    height: 658px;
+    left: 646px;
+    top: 175px;
+    background: #111111;
+}
+
+
+.carousel .two .title {
+    padding-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.carousel .two .version {
+    padding-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.carousel .two .image {
+    padding-top: 20px;
+    padding-left: 60px;
+    
+    width: 579px;
+    height: 414px;
+    
+
+}
+
+.carousel .two .description {
+    padding-top: 20px;
+    padding-left: 60px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+.carousel .three{
+    position: absolute;
+    width: 532px;
+    height: 549px;
+    left: 1304px;
+    top: 267px;
+    background: #111111;
+}
+.carousel .three .title {
+    padding-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.carousel .three .version {
+    padding-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.carousel .three .image {
+    padding-top: 20px;
+    padding-left: 50px;
+
+    width: 481px;
+    height: 322px;
+
+}
+
+.carousel .three .description {
+    padding-top: 20px;
+    padding-left: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
