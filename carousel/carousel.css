@@ -159,3 +159,21 @@
 
     color: #FFFFFF;
 }
+.carousel .arrows{
+    position: absolute;
+    width: 1862.06px;
+    height: 50px;
+    left: 32px;
+    top: 516px;
+}
+.arrows .arrow-2{
+    position: absolute;
+    position: absolute;
+    height: 0px;
+    left: 1838px;
+}
+.arrows .arrow-1{
+    position: absolute;
+    left: -11.3px;
+    top: 0px;
+}
