@@ -31,6 +31,76 @@
     plugs lol
     @grey and @soupy morally supported and helped in the making of this website
   -->
+
+  <!--
+    SET TO FALSE FOR NO POPUP
+  -->
+<script>
+  var popup = true;
+
+
+
+
+  window.onload = function () {
+    console.log("loaded");
+    if (popup) {
+
+      document.getElementById("wip-notif").classList.remove("hidden");
+
+    }
+  };
+  function removeNotif() {
+    element = document.getElementById("wip-notif");
+    element.classList.add("fadeOut");
+
+  } 
+</script>
+
+<style>
+  .wip-notif .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  }
+
+  .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+</style>
+
+<div class="wip-notif hidden" style="z-index: 2000; width: 100%; height: 4794px; position:absolute; " id="wip-notif">
+  <div class="inner" style="position:absolute; z-index: 1999; top: 9%;">
+    <h1 class="title">This website is a work in progress!</h1>
+    <p class="text">We are still working on this website, so please be patient. We will be adding more content soon!</p>
+    <br><br><a class="button" style="transform: translate(-50%, 100%);"
+      href="https://www.instagram.com/pro2type_21813/">Follow us on Instagram!</a>
+    <button style="transform: translate(-370%, 100%);" class="button" onclick="removeNotif()">Continue</button>
+  </div>
+  <div class="wip-bg blur" style="z-index: 1990; width: 100%; height: 4794px; position:absolute;"></div>
+</div>
+
   <div class="page" id="top">
     <div class="nav">
       <div class="inner">

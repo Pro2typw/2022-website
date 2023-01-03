@@ -14,7 +14,9 @@ body {
   flex-grow: 0;
   margin: 0px;
 }
-
+.blur{
+  backdrop-filter: blur(3px);
+}
 .page {
   /* div#masterPage */
 
