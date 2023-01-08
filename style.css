@@ -3,7 +3,8 @@ body {
   /* div#main_MF */
 
   scroll-behavior: smooth;
-  max-width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
   height: 4794px;
 
 
