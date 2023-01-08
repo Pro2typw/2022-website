@@ -11,7 +11,8 @@ navbar.classList.add("hidden");
 // onload add navbar
 window.onload = (event) => {
   if (window.scrollY > 75) {
-        
+        navbar.classList.remove("hidden");
+        $(".nav").css('transform', "translateY(-100%)");
         
         
         setTimeout(function(){
