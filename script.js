@@ -6,7 +6,30 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('scrolled')
     }
-})
+});
+if (window.scrollY > 75) {
+        $('.nav').css('transition', 'all 0s ease, visibility 0s;')
+        navbar.classList.add('scrolled')
+        
+        $(".nav").css('transform', "translateY(-100%)");
+        $('.nav').css('transition', 'all 0.5s ease, visibility 0.5s;')
+        $('.nav').css('transition', 'all 0s ease, visibility 0s;')
+}
+// onload add navbar
+window.onload = (event) => {
+  if (window.scrollY > 75) {
+        navbar.classList.add('scrolled')
+        $(".nav").css('transform', "translateY(-100%)");
+        setTimeout(function(){
+          $(".nav").css('transform', "translateY(0%)");
+        }, 400);
+    } else {
+        $('.nav').css('transition', 'all 0.5s ease, visibility 0.5s;')
+        navbar.classList.remove('scrolled')
+        $(".nav").css('transform', "translateY(0%)");
+        $('.nav').css('transition', 'all 0s ease, visibility 0s;')
+    }
+};
 window.addEventListener("scroll", function (event) {
    
     const distance = window.scrollY;
@@ -41,3 +64,6 @@ function onScroll(event){
 
 // q: how do I make a new git?
 // a: git init
+
+
+

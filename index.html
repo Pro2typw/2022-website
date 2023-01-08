@@ -23,7 +23,7 @@
   <!--
     FTC 21813 Website
     https://www.instagram.com/pro2type_21813/
-    Built by Ethan Kawley
+    Built by Ethan Kawley.
     Free use, give credit if you'd like.
     Thanks for checking out the code, I did it as best I could.
     https://www.instagram.com/barking.beth/
@@ -40,11 +40,10 @@
 
 
 
-
   window.onload = function () {
     console.log("loaded");
     if (popup) {
-
+      
       document.getElementById("wip-notif").classList.remove("hidden");
 
     }
@@ -52,7 +51,10 @@
   function removeNotif() {
     element = document.getElementById("wip-notif");
     element.classList.add("fadeOut");
-
+    popup = false;
+    setTimeout(function(){
+     element.remove();
+  }, 1000)
   } 
 </script>
 
