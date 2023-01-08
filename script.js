@@ -11,8 +11,7 @@ navbar.classList.add("hidden");
 // onload add navbar
 window.onload = (event) => {
   if (window.scrollY > 75) {
-        navbar.classList.remove("hidden");
-        $(".nav").css('transform', "translateY(-100%)");
+        
         
         
         setTimeout(function(){
@@ -22,9 +21,13 @@ window.onload = (event) => {
           
         }, 400);
     } else {
-        navbar.classList.add("remove");
+        navbar.classList.remove("hidden");
+        $(".nav").css('transform', "translateY(-100%)");
+        setTimeout(function(){
+        
         navbar.classList.remove('scrolled');
         $(".nav").css('transform', "translateY(0%)");
+        }, 400);
       
         
     }
