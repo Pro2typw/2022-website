@@ -203,26 +203,28 @@
 
       <div class="carousel"> 
         <div class="arrows">
-          <button class="arrow-2"><img src="/assets/Arrow 2.svg"></button>
-          <button class="arrow-1"><img src="/assets/Arrow 1.svg"></button>
+          <button class="arrow-2" onclick="moveRight();"><img src="/assets/Arrow 2.svg"></button>
+          <button class="arrow-1" onclick="moveLeft();"><img src="/assets/Arrow 1.svg"></button>
         </div>
-        <div class="one">
-          <p class="title">ROBOT_TITLE</p>
-          <p class="version">ROBOT_VERSION</p>
-          <img class="image" src="/assets/Checker.jpg">
-          <p class="description">ROBOT_SHORT_DESCRIPTION</p>
-        </div>
-        <div class="two">
-          <p class="title">ROBOT_TITLE</p>
-          <p class="version">ROBOT_VERSION</p>
-          <img class="image" src="/assets/Checker.jpg">
-          <p class="description">ROBOT_SHORT_DESCRIPTION</p>
-        </div>
-        <div class="three">
-          <p class="title">ROBOT_TITLE</p>
-          <p class="version">ROBOT_VERSION</p>
-          <img class="image" src="/assets/Checker.jpg">
-          <p class="description">ROBOT_SHORT_DESCRIPTION</p>
+        <div class="robots">
+          <div class="default"  id="Cone" data-position="1" id="one">
+            <p class="title">ROBOT_TITLE</p>
+            <p class="version">ROBOT_VERSION</p>
+            <img class="image" src="/assets/Checker.jpg">
+            <p class="description">ROBOT_SHORT_DESCRIPTION</p>
+          </div>
+          <div class="focus"  id="Ctwo" data-position="2">
+            <p class="title">ROBOT_TITLE</p>
+            <p class="version">ROBOT_VERSION</p>
+            <img class="image" src="/assets/Checker.jpg">
+            <p class="description">ROBOT_SHORT_DESCRIPTION</p>
+          </div>
+          <div class="default"  id="Cthree" data-position="3">
+            <p class="title">ROBOT_TITLE</p>
+            <p class="version">ROBOT_VERSION</p>
+            <img class="image" src="/assets/Checker.jpg">
+            <p class="description">ROBOT_SHORT_DESCRIPTION</p>
+          </div>
         </div>
       </div>
     </div>
