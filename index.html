@@ -36,7 +36,7 @@
     SET TO FALSE FOR NO POPUP
   -->
 <script>
-  var popup = true;
+  var popup = false;
   window.addEventListener("load", function (event) {
       console.log("loaded");
     if (popup) {
@@ -165,7 +165,7 @@
               What are we competing in?
             </p>
             <div class="line hidden" id="in-line"></div>
-            <a class="button hidden" id="in-button"><span class="inner"> FIRST Website</span></a>
+            <a class="button hidden" id="in-button"><span class="inner"> FIRST Website </span></a>
           </div>
           <div class="container">
             <div class="bg" id="backgroundwithimage">
@@ -179,7 +179,7 @@
               this.querySelectorAll(".section-two .left .bg .image").forEach((shift) => {
                 const position = shift.getAttribute("value");
                 var x = ((window.innerWidth - event.pageX * position) / 100) * -1;
-                var y = (window.innerHeight - event.pageY * position) / 100;
+                var y = (window.innerHeight - event.pageY * position) / 100 * -1;
                 //console.log(x);
                 /*if(x > -2.7222222222222223)
                 {
@@ -226,7 +226,27 @@
       </div>
     </div>
     <div class="team" id="team">
-      
+      <div class="top-hero">
+        <div class="text">
+          <h1 class="title">Our Team.</h1>
+          <div class="description">
+            <p>Our team is part of a school 501C3 Club. For most of the members it's their sophomore year at FMHS. Our team is hard at
+            work almost every day in the FMHS Robotics Club room.</p>
+          </div> 
+        </div>
+        <div class="bg">
+          <img src="/assets/full-team.webp" class="image" value="2">
+        </div>
+        <script>
+          window.addEventListener("scroll", function (event) {
+
+              const distance = window.scrollY;
+              $(".team .top-hero .bg .image").css('transform', `translateY(${distance *
+                0.2}px)`);
+
+            });
+        </script>
+      </div>
     </div>
   </body>
 <script src="https://cdn.tailwindcss.com"></script>
