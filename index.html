@@ -37,17 +37,14 @@
   -->
 <script>
   var popup = true;
-
-
-
-  window.onload = function () {
-    console.log("loaded");
+  window.addEventListener("load", function (event) {
+      console.log("loaded");
     if (popup) {
-      
+
       document.getElementById("wip-notif").classList.remove("hidden");
 
     }
-  };
+    }, false);
   function removeNotif() {
     element = document.getElementById("wip-notif");
     element.classList.add("fadeOut");
