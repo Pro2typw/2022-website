@@ -569,6 +569,8 @@ img {
   width: auto; /* used to be 214px */
   height: 244px;
   left: 0px;
+  display: block;
+  margin: 0 auto;
   top: 0px;
   background: url("/assets/team/default.png");
 }

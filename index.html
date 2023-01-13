@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/carousel/carousel.css">
-  
+
   <link rel="stylesheet" href="https://unpkg.com/transition-style">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,77 +35,77 @@
   <!--
     SET TO FALSE FOR NO POPUP
   -->
-<script>
-  var popup = true;
-  window.addEventListener("load", function (event) {
+  <script>
+    var popup = true;
+    window.addEventListener("load", function (event) {
       console.log("loaded");
-    if (popup) {
+      if (popup) {
 
-      document.getElementById("wip-notif").classList.remove("hidden");
+        document.getElementById("wip-notif").classList.remove("hidden");
 
-    }
+      }
     }, false);
-  function removeNotif() {
-    element = document.getElementById("wip-notif");
-    element.classList.add("fadeOut");
-    popup = false;
-    setTimeout(function(){
-     element.remove();
-  }, 1000)
-  } 
-</script>
+    function removeNotif() {
+      element = document.getElementById("wip-notif");
+      element.classList.add("fadeOut");
+      popup = false;
+      setTimeout(function () {
+        element.remove();
+      }, 1000)
+    } 
+  </script>
 
-<style>
-  .wip-notif .inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  <style>
+    .wip-notif .inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
-  }
-
-  .fadeOut {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
     }
 
-    100% {
-      opacity: 0;
+    .fadeOut {
+      -webkit-animation-name: fadeOut;
+      animation-name: fadeOut;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
     }
-  }
-</style>
 
-<div class="wip-notif hidden" style="z-index: 2000; width: 100%; height: 4794px; position:absolute; " id="wip-notif">
-  <div class="inner" style="position:absolute; z-index: 1999; top: 9%;">
-    <h1 class="title">This website is a work in progress!</h1>
-    <p class="text">We are still working on this website, so please be patient. We will be adding more content soon!</p>
-    <br><br><a class="button" style="transform: translate(176%, 59%);
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+
+  <div class="wip-notif hidden" style="z-index: 2000; width: 100%; height: 4794px; position:absolute; " id="wip-notif">
+    <div class="inner" style="position:absolute; z-index: 1999; top: 9%;">
+      <h1 class="title">This website is a work in progress!</h1>
+      <p class="text">We are still working on this website, so please be patient. We will be adding more content soon!
+      </p>
+      <br><br><a class="button" style="transform: translate(176%, 59%);
 display: block;
-width: 30%;"
-      href="https://www.instagram.com/pro2type_21813/">Follow us on Instagram!</a>
-    <button style="transform: translate(-100%, -36%);" class="button" onclick="removeNotif()">Continue</button>
+width: 30%;" href="https://www.instagram.com/pro2type_21813/">Follow us on Instagram!</a>
+      <button style="transform: translate(-100%, -36%);" class="button" onclick="removeNotif()">Continue</button>
+    </div>
+    <div class="wip-bg blur" style="z-index: 1990; width: 100%; height: 4794px; position:absolute;"></div>
   </div>
-  <div class="wip-bg blur" style="z-index: 1990; width: 100%; height: 4794px; position:absolute;"></div>
-</div>
 
   <div class="page" id="top">
     <div class="nav in:wipe:down">
       <div class="inner">
-        
+
         <h4 class="logo">FTC #21813 - Pro2Type</h4>
         <div class="buttons">
           <div class="btn-wrap">
@@ -214,25 +214,25 @@ width: 30%;"
     </div>
     <div class="robot" id="robots">
 
-      <div class="carousel"> 
+      <div class="carousel">
         <div class="arrows">
           <button class="arrow-2" onclick="moveRight();"><img src="/assets/Arrow 2.svg"></button>
           <button class="arrow-1" onclick="moveLeft();"><img src="/assets/Arrow 1.svg"></button>
         </div>
         <div class="robots">
-          <div class="default"  id="Cone" data-position="1" id="one">
+          <div class="default" id="Cone" data-position="1" id="one">
             <p class="title">ROBOT_TITLE</p>
             <p class="version">ROBOT_VERSION</p>
             <img class="image" src="/assets/Checker.jpg">
             <p class="description">ROBOT_SHORT_DESCRIPTION</p>
           </div>
-          <div class="focus"  id="Ctwo" data-position="2">
+          <div class="focus" id="Ctwo" data-position="2">
             <p class="title">ROBOT_TITLE</p>
             <p class="version">ROBOT_VERSION</p>
             <img class="image" src="/assets/Checker.jpg">
             <p class="description">ROBOT_SHORT_DESCRIPTION</p>
           </div>
-          <div class="default"  id="Cthree" data-position="3">
+          <div class="default" id="Cthree" data-position="3">
             <p class="title">ROBOT_TITLE</p>
             <p class="version">ROBOT_VERSION</p>
             <img class="image" src="/assets/Checker.jpg">
@@ -246,9 +246,10 @@ width: 30%;"
         <div class="text">
           <h1 id="in-ourteam" class="title hidden">Our Team.</h1>
           <div id="in-desc" class="description hidden">
-            <p>Our team is part of a school 501C3 Club. For most of the members it's their sophomore year at FMHS. Our team is hard at
-            work almost every day in the FMHS Robotics Club room.</p>
-          </div> 
+            <p>Our team is part of a school 501C3 Club. For most of the members it's their sophomore year at FMHS. Our
+              team is hard at
+              work almost every day in the FMHS Robotics Club room.</p>
+          </div>
         </div>
         <div class="bg">
           <img src="/assets/full-team.webp" class="image" value="2">
@@ -256,55 +257,55 @@ width: 30%;"
         <script>
           window.addEventListener("scroll", function (event) {
 
-              const distance = window.scrollY;
-              $(".team .top-hero .bg .image").css('transform', `translateY(${distance *
-                0.2}px)`);
+            const distance = window.scrollY;
+            $(".team .top-hero .bg .image").css('transform', `translateY(${distance *
+              0.2}px)`);
 
-            });
+          });
         </script>
       </div>
       <div class="main-section">
         <div class="teamlist">
-            <div class="teamlist-wrapper">
-              <div class="card">
-                <div class="image">
-                  <img src="/assets/Team/Sahas-Kumaraguru.jpg">
-                </div>
-                <div class="namecard">
-                  <p class="name">Sahas Kumaraguru</p>
-                  <p class="position">Team Captain</p>
-                </div>
+          <div class="teamlist-wrapper">
+            <div class="card">
+              <div class="image">
+                <img src="/assets/Team/Sahas-Kumaraguru.jpg">
               </div>
-              <div class="card">
-                <div class="image">
-                  <img src="/assets/Team/Team 1.webp">
-                </div>
-                <div class="namecard">
-                  <p class="name">Ronith Pai</p>
-                  <p class="position">Design Lead</p>
-                </div>
+              <div class="namecard">
+                <p class="name">Sahas Kumaraguru</p>
+                <p class="position">Team Captain</p>
               </div>
-              <div class="card">
-                <div class="image">
-                  <img src="/assets/Team/Dhanush-Chilakala.jpg">
-                </div>
-                <div class="namecard">
-                  <p class="name">Dhanush Chilakala</p>
-                  <p class="position">Programming Lead</p>
-                </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/assets/Team/Team 1.webp">
               </div>
+              <div class="namecard">
+                <p class="name">Ronith Pai</p>
+                <p class="position">Design Lead</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/assets/Team/Dhanush-Chilakala.jpg">
+              </div>
+              <div class="namecard">
+                <p class="name">Dhanush Chilakala</p>
+                <p class="position">Programming Lead</p>
+              </div>
+            </div>
 
-              <div class="card">
-                <div class="image">
-                  <img src="/assets/Team/Team 1.webp">
-                </div>
-                <div class="namecard">
-                  <p class="name">Jayant Bhaskaruni</p>
-                  <p class="position">Programmer</p>
-                </div>
+            <div class="card">
+              <div class="image">
+                <img src="/assets/Team/Team 1.webp">
               </div>
+              <div class="namecard">
+                <p class="name">Jayant Bhaskaruni</p>
+                <p class="position">Programmer</p>
+              </div>
+            </div>
 
-              <div class="card">
+            <div class="card">
               <div class="image">
                 <img src="/assets/Team/Pravith-Munipalle.jpg">
               </div>
@@ -312,80 +313,84 @@ width: 30%;"
                 <p class="name">Pravith Munipalle</p>
                 <p class="position">Outreach Lead</p>
               </div>
-              </div>
+            </div>
 
-              <div class="card">
-                <div class="image">
-                  <img src="/assets/Team/Team 1.webp">
-                </div>
-                <div class="namecard">
-                  <p class="name">Ava Moon</p>
-                  <p class="position">Outreach</p>
-                </div>
+            <div class="card">
+              <div class="image">
+                <img src="/assets/Team/Team 1.webp">
               </div>
-
-              <div class="card">
-                <div class="image">
-                  <img src="/assets/Team/Team 1.webp">
-                </div>
-                <div class="namecard">
-                  <p class="name">Anirudh Vummadising</p>
-                  <p class="position">Design & Build</p>
-                </div>
+              <div class="namecard">
+                <p class="name">Ava Moon</p>
+                <p class="position">Outreach</p>
               </div>
+            </div>
 
-              <div class="card">
-                <div class="image">
-                  <img src="/assets/Team/Shahryaar-Mohiuddin.jpg">
-                </div>
-                <div class="namecard">
-                  <p class="name">Shahryaar Mohiuddin</p>
-                  <p class="position">Mentor</p>
-                </div>
+            <div class="card">
+              <div class="image">
+                <img src="/assets/Team/Team 1.webp">
               </div>
-
-              <div class="card">
-                <div class="image">
-                  <img src="/assets/Team/Team 1.webp">
-                </div>
-                <div class="namecard">
-                  <p class="name">Arnav Gowda</p>
-                  <p class="position">Design & Build</p>
-                </div>
+              <div class="namecard">
+                <p class="name">Anirudh Vummadising</p>
+                <p class="position">Design & Build</p>
               </div>
+            </div>
 
-              <div class="card">
-                <div class="image">
-                  <img src="/assets/Team/Ashwin-Anish.jpg">
-                </div>
-                <div class="namecard">
-                  <p class="name">Ashwin Anish</p>
-                  <p class="position">Design</p>
-                </div>
+            <div class="card">
+              <div class="image">
+                <img src="/assets/Team/Shahryaar-Mohiuddin.jpg">
               </div>
-
-              <div class="card">
-                <div class="image">
-                  <img src="/assets/Team/Team 1.webp">
-                </div>
-                <div class="namecard">
-                  <p class="name">Ethan Kawley</p>
-                  <p class="position">Website, Outreach & Programmer</p>
-                </div>
+              <div class="namecard">
+                <p class="name">Shahryaar Mohiuddin</p>
+                <p class="position">Mentor</p>
               </div>
+            </div>
 
-            </div>  
+            <div class="card">
+              <div class="image">
+                <img src="/assets/Team/Team 1.webp">
+              </div>
+              <div class="namecard">
+                <p class="name">Arnav Gowda</p>
+                <p class="position">Design & Build</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <img src="/assets/Team/Ashwin-Anish.jpg">
+              </div>
+              <div class="namecard">
+                <p class="name">Ashwin Anish</p>
+                <p class="position">Design</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <img src="/assets/Team/Team 1.webp">
+              </div>
+              <div class="namecard">
+                <p class="name">Ethan Kawley</p>
+                <p class="position">Website, Outreach & Programmer</p>
+              </div>
+            </div>
+
+          </div>
         </div>
         <div class="bg">
 
         </div>
       </div>
     </div>
-    <div class="footer">
-
-
+    <div id="footer">
+      <!-- alternate ID for footer-->
     </div>
-  </body>
+    <div class="footer" id="contact">
+
+
+      
+    </div>
+</body>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://kit.fontawesome.com/ea7b25538a.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
