@@ -31,10 +31,6 @@ body {
 
 .button {
   text-anchor: middle;
-  position: absolute;
-  right: 5%;
-  top: 25%;
-  float: right;
   padding: 10px;
   border: solid black 1px;
   transition: all 0.2s ease, visibility 0s;
@@ -87,14 +83,23 @@ body {
 .nav .inner {
   padding-left: 10px;
   padding-right: 10px;
-
+  
 }
-
+.nav .inner .buttons{
+  display: inline-flex;
+    height: 60%;
+    width: 29%;
+    position: absolute;
+    right: 0px;
+    top: 34%;
+}
 .nav.scrolled {
   background-color: #fff;
   border-bottom: solid black;
 }
-
+.nav .inner .buttons .btn-wrap{
+  padding-inline: 4px;
+}
 .nav .logo {
   left: 7%;
   font-family: 'Montserrat', sans-serif;
@@ -607,4 +612,11 @@ position: relative;
     align-items: center;
   
     color: #000000;
+}
+.footer{
+  width: 100%;
+    height: 19.7%;
+    top: 4967px;
+    position: absolute;
+    background: rgb(255, 255, 255);
 }
