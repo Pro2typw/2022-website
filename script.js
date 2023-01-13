@@ -53,6 +53,19 @@ function onScroll(event){
   var btn = document.querySelector('#in-button');
   var y = window.pageYOffset;
   
+  if (y >= 2754){
+    var element2 = document.querySelector('#in-ourteam');
+    setTimeout(function () {
+      element2.classList.add("left--state-in");
+      element2.classList.remove("hidden");
+    }, 100)
+    var element3 = document.querySelector('#in-desc');
+    setTimeout(function () {
+      element3.classList.add("left--state-in");
+      element3.classList.remove("hidden");
+    }, 200)
+  }
+
   if(y >= 700)
   {
     setTimeout(function(){
