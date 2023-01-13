@@ -249,7 +249,7 @@ body {
   height: 710px;
   left: 0px;
   right: 0px;
-  top: 26.9%;
+  top: 27.5%;
 
 }
 
@@ -452,7 +452,7 @@ img {
 .robot{
   width: 100%;
   position: absolute;
-  top: 1969px;
+  top: 1997px;
 }
 
 .team{
@@ -596,7 +596,7 @@ position: relative;
     width: 149.23px;
     height: 30px;
     left: 16px;
-    top: 26px;
+    top: 18px;
   
     font-family: 'Montserrat';
     font-style: normal;
