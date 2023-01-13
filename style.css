@@ -552,7 +552,7 @@ img {
 .team .main-section .teamlist-wrapper{
   display: flex;
     flex-flow: row wrap;
-    gap: 5%;
+    gap: 4%;
     align-items: flex-start;
     padding: 30px 0px 70px;
     width: 100%;
@@ -561,13 +561,16 @@ img {
 }
 .team .main-section .teamlist-wrapper .card{
   height: 336px;
-  width: 215px;
+  width: 231px;
+  overflow: hidden;
 }
 .team .main-section .teamlist-wrapper .card .image img{
   position: relative;
-  width: 214px;
+  width: auto; /* used to be 214px */
   height: 244px;
   left: 0px;
+  display: block;
+    margin: 0 auto;
   top: 0px;
   background: url("/assets/team/default.png");
 }
