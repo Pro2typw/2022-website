@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
+
+:root {
+  --main-bg-color: #000;
+  --main-bg-color-inverted: #fff;
+  --main-bg-color-alt: rgb(58, 58, 58);
+
+  --main-text-color-alt: rgb(199, 199, 199);
+  --main-text-color: #fff;
+  --main-text-color-inverted: #000;
+  
+  --main-font: 'Montserrat';
+  --code-font: 'Source Code Pro', monospace;
+}
+
 html,
 body {
   /* div#main_MF */
@@ -8,7 +22,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   height: 5890px;
-
+  background-color: var(--main-bg-color);
 
   /* Inside auto layout */
 
@@ -37,9 +51,9 @@ body {
   border: solid black 1px;
   transition: all 0.2s ease, visibility 0s;
   background-color: rgba(0, 0, 0, 0.6);
-
+  
   color: #FFFFFF;
-  font-family: montserrat, sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -92,25 +106,26 @@ body {
     height: 60%;
     width: 29%;
     position: absolute;
-    right: 0px;
+    right: 35%;
     top: 34%;
 }
 .nav.scrolled {
-  background-color: #fff;
-  border-bottom: solid black;
+ 
+  
+  color: #fff;
 }
 .nav .inner .buttons .btn-wrap{
   padding-inline: 4px;
 }
 .nav .logo {
   left: 7%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--main-font);
   letter-spacing: .2rem;
   font-size: 20px;
   font-weight: 800;
   padding-top: 6px;
   transform: translateY(50%);
-  cursor: not-allowed;
+  cursor: pointer;
   position: absolute;
 }
 
@@ -141,7 +156,7 @@ body {
   display: flex;
   width: 100%;
   border: solid 2px #000;
-  background: #000000;
+  background: var(--main-bg-color);;
   height: 349px;
   gap: 3%;
   justify-content: center;
@@ -190,7 +205,7 @@ body {
   left: calc(50% - 337.11px/2 + 0.1px);
   top: 8%;
 
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
@@ -216,7 +231,7 @@ body {
   left: calc(50% - 375.4px/2 - 0.91px);
   top: 22%;
 
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -282,7 +297,7 @@ body {
   left: 0px;
   top: 1px;
   border: solid #000;
-  width: 40%;
+  width: 50%;
 }
 
 .section-two .left .bg {
@@ -322,12 +337,12 @@ img {
 
 
 .section-two .right {
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
   height: 708px;
   right: 0px;
   top: 1px;
   border: solid #000;
-  width: 60%;
+  width: 50%;
   position: absolute;
 }
 
@@ -336,7 +351,7 @@ img {
   position: absolute;
   left: 15%;
   top: 20%;
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -344,13 +359,13 @@ img {
   display: flex;
   align-items: center;
 
-  color: #000000;
+  color: var(--main-text-color);
 
 
 }
 
 .section-two .wrapper .right .text {
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
   position: absolute;
   top: 26%;
   right: 18%;
@@ -364,7 +379,18 @@ img {
   display: flex;
   align-items: center;
 
-  color: #000000;
+  color: var(--main-text-color);
+}
+
+.section-two .wrapper .right .text .cite{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  position: absolute;
+  top: 239px;
+  left: 5px;
+  color: var(--main-text-color-alt);
 }
 
 .section-two .wrapper .left .content {
@@ -380,7 +406,7 @@ img {
   left: 207.86px;
   top: 89px;
 
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -422,7 +448,9 @@ img {
   top: 322px;
   bottom: 365px;
 
-  background: #FFFFFF;
+  background: linear-gradient(to left, #fff 50%, #000 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
   color: #000;
   border: 1px solid #000000;
   width: 192px;
@@ -433,7 +461,7 @@ img {
 
   top: calc(50% - 18px/2);
   position: absolute;
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -453,9 +481,15 @@ img {
 
 .section-two .wrapper .left .content .button:hover {
   color: #fff;
-  background-color: #000;
+  background-position: left;
+  border-radius: 0px;
 }
-
+.cntc{
+  border-radius: 50px;
+}
+.cntc:hover{
+  border-radius: 10px;
+}
 .robot{
   width: 100%;
   position: absolute;
@@ -479,7 +513,7 @@ img {
   position: absolute;
   top: 48%;
   left: 8%;
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 56px;
@@ -507,7 +541,7 @@ img {
     left: 11px;
     top: 2px;
   padding: 3px;
-    font-family: 'Montserrat';
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -538,7 +572,7 @@ img {
   width: 100%;
   height: 1842px;
   z-index: 5;
-    background: #FFFFFF;
+    background: var(--main-bg-color);
 }
 
 .team .main-section .teamlist{
@@ -548,7 +582,7 @@ img {
     left: calc(50% - 1432px/2);
     top: 675px;
     z-index: 6;
-    background: rgba(232, 230, 230, 0.8);
+    background: var(--main-bg-color-alt);
     
 }
 .team .main-section .teamlist-wrapper{
@@ -582,7 +616,7 @@ position: relative;
   height: 73px;
   left: 52px;
     top: -50px;
-  background: #FFFFFF;
+  background: var(--main-bg-color);
 }
 .team .main-section .teamlist-wrapper .card .namecard .name{
   position: relative;
@@ -591,7 +625,7 @@ position: relative;
   left: 8px;
   top: 14px;
 
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -599,7 +633,7 @@ position: relative;
   display: flex;
   align-items: center;
 
-  color: #000000;
+  color: var(--main-text-color);
 }
 .team .main-section .teamlist-wrapper .card .namecard .position{
   position: relative;
@@ -608,7 +642,7 @@ position: relative;
     left: 16px;
     top: 18px;
   
-    font-family: 'Montserrat';
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -616,28 +650,26 @@ position: relative;
     display: flex;
     align-items: center;
   
-    color: #000000;
+    color: var(--main-text-color);
 }
 .footer{
   width: 100%;
     height: 19.7%;
     top: 4967px;
     position: absolute;
-    background: rgb(255, 255, 255);
+    background: var(--main-bg-color);
 }
 .footer .main-footer{
   position: absolute;
     width: 100%;
     height: 6%;
     bottom: 0px;
-    color: #3c3c3c;
-    background: #ffffff;
-  font-family: 'Source Code Pro', monospace;
+    color: var(--main-text-color-alt);
+    background: var(--main-bg-color);
+  font-family: var(--code-font);
   font-weight: 600;
 }
-.footer .main-footer p{
 
-}
 .hidden-link{
   color: inherit;
   text-decoration: underline;
@@ -645,4 +677,114 @@ position: relative;
 .hidden-link:hover{
   color: inherit;
   text-decoration: none;
+}
+
+.footer .main-content .left .heading{
+  position: absolute;
+    width: 839px;
+    height: 85px;
+    left: 0px;
+    top: 328px;
+  
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+  
+    color: #FFFFFF;
+}
+.footer .main-content .left .subheading{
+  position: absolute;
+    width: 414px;
+    height: 115px;
+    left: 213px;
+    top: 398px;
+  
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  
+    color: #FFFFFF;
+}
+.footer .main-content .left .sponsor-btn-wrapper{
+  position: absolute;
+    width: 487px;
+    height: 52px;
+    left: 190px;
+    top: 635px;
+}
+.footer .main-content .left .sponsor-btn-bg{
+  
+  
+    background: #FFFFFF;
+    border-radius: 73px;
+    width: 100%;
+    height: 100%;
+      
+
+  }
+.footer .main-content .left .sponsor-btn-wrapper .text {
+  position: absolute;
+  top: 25%;
+    left: 22%;z-index: 15;
+  color: var(--main-text-color-inverted);
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.15s;
+}
+.footer .main-content .left .sponsor-btn-chip{
+  background: #67AC72;
+    border-radius: 73px;
+width: 125px;
+  height: 52px;
+  z-index: 10;
+  right: 0px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+
+}
+.footer .main-content .left .sponsor-btn-wrapper:hover .sponsor-btn-chip {
+  width: 487px;
+}
+.footer .main-content .left .sponsor-btn-wrapper:hover .text {
+color: var(--main-text-color);
+}
+.footer .main-content .left .sponsor-btn-wrapper:hover .arrow {
+  color: var(--main-text-color);
+}
+
+.footer .main-content .left .arrow{
+    position: absolute;
+      right: 45px;
+      top: 9px;
+      font-size: 35px;
+      transition: all 0.3s ease-in-out;
+        transition-delay: 0.15s;
+      color: var(--main-text-color-inverted);
+}
+.footer .main-content .right{
+  position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.footer .main-content .right .heading{
+  position: absolute;
+    width: 839px;
+    height: 85px;
+    left: 1081px;
+    top: 340px;
+  
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    
+    text-align: center;
+  
+    color: #FFFFFF;
 }

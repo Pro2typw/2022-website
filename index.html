@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/carousel/carousel.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/transition-style">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
     SET TO FALSE FOR NO POPUP
   -->
   <script>
-    var popup = true;
+    var popup = false;
     window.addEventListener("load", function (event) {
       console.log("loaded");
       if (popup) {
@@ -106,7 +106,7 @@ width: 30%;" href="https://www.instagram.com/pro2type_21813/">Follow us on Insta
     <div class="nav in:wipe:down">
       <div class="inner">
 
-        <h4 class="logo">FTC #21813 - Pro2Type</h4>
+        <h4 class="logo" onclick="window.location.href='https://protwotype.tk'">FTC #21813 - Pro2Type</h4>
         <div class="buttons">
           <div class="btn-wrap">
             <a class="button" href="#top">HOME</a>
@@ -121,7 +121,7 @@ width: 30%;" href="https://www.instagram.com/pro2type_21813/">Follow us on Insta
             <a class="button" href="#team">OUR TEAM</a>
           </div>
           <div class="btn-wrap">
-            <a class="button" href="#contact">CONTACT US</a>
+            <a class="button cntc" href="#contact">CONTACT US</a>
           </div>
         </div>
       </div>
@@ -130,8 +130,8 @@ width: 30%;" href="https://www.instagram.com/pro2type_21813/">Follow us on Insta
     <div class="header-wrapper">
       <div class="text-wrapper">
         <div class="text">
-          <p class="title">Pro2Type</p>
-          <p class="subtitle">Our robot is designed to win</p>
+          <p class="title animate__animated hidden">Pro2Type</p>
+          <p class="subtitle animate__animated hidden">Our robot is designed to win</p>
         </div>
       </div>
       <div class="bg">
@@ -173,6 +173,8 @@ width: 30%;" href="https://www.instagram.com/pro2type_21813/">Follow us on Insta
             community outreach to earn specific awards. Participants are eligible to apply for $80M+ in college
             scholarships.<br>Each season concludes with regional championship events and an exciting FIRST
             Championship."
+            <br>
+            <span class="cite">- FIRST Website</span>
           </p>
         </div>
         <div class="left">
@@ -388,7 +390,24 @@ width: 30%;" href="https://www.instagram.com/pro2type_21813/">Follow us on Insta
     <div class="footer" id="contact">
 
       <div class="main-content">
-
+         <div class="left">
+          <h1 class="heading">protwotype</h1>
+          <p class="subheading">Here at protwotype we want to sit around and play videogames</p>
+          <div class="sponsor-btn-wrapper">
+            <a href="/sponsor">
+            <p class="text">Want to become a sponsor?</p>
+            <div class="sponsor-btn-chip" >
+                <i class="fa-solid fa-chevron-right arrow"></i>
+            </div>
+            </a>
+            <div class="sponsor-btn-bg">
+              
+            </div>
+          </div>
+        </div>
+         <div class="right">
+          <h1 class="heading">Contact Us</h1>
+          <div>
       </div>
       <div class="main-footer">
         <center>
