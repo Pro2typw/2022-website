@@ -713,10 +713,12 @@ position: relative;
 }
 .footer .main-content .left .sponsor-btn-wrapper{
   position: absolute;
-    width: 487px;
-    height: 52px;
+    width: 489px;
+    height: 56px;
     left: 190px;
     top: 635px;
+    border: solid 2px #67AC72;
+    border-radius: 73px;
 }
 .footer .main-content .left .sponsor-btn-bg{
   
@@ -725,6 +727,7 @@ position: relative;
     border-radius: 73px;
     width: 100%;
     height: 100%;
+    
       
 
   }
@@ -745,6 +748,7 @@ width: 125px;
   right: 0px;
     position: absolute;
     transition: all 0.3s ease-in-out;
+    
 
 }
 .footer .main-content .left .sponsor-btn-wrapper:hover .sponsor-btn-chip {
@@ -764,19 +768,25 @@ color: var(--main-text-color);
       font-size: 35px;
       transition: all 0.3s ease-in-out;
         transition-delay: 0.15s;
-      color: var(--main-text-color-inverted);
+      color: var(--main-text-color);
 }
 .footer .main-content .right{
   position: absolute;
-    right: 0px;
-    top: 0px;
+  text-align: center;
+  width: 50%;
+  right: 0px;
+  top: 328px;
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+    font-style: normal;
+  align-items: center;
+  
 }
 .footer .main-content .right .heading{
-  position: absolute;
+  
     width: 839px;
     height: 85px;
-    left: 1081px;
-    top: 340px;
+    
   
     font-family: var(--main-font);
     font-style: normal;
@@ -786,5 +796,14 @@ color: var(--main-text-color);
     
     text-align: center;
   
-    color: #FFFFFF;
+    color: var(--main-text-color);
+}
+.footer .main-footer .social-btns{
+  font-size: 22px;
+    top: 1%;
+    position: absolute;
+    right: 26%;
+    display: flex;
+    gap: 24%;
+    color: var(--main-text-color);
 }
