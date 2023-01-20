@@ -1,15 +1,29 @@
-const navbar = document.querySelector('.nav')
-
+const navbar = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 75) {
+        
         navbar.classList.add('scrolled')
     } else {
         navbar.classList.remove('scrolled')
     }
 });
+var lastScrollTop = 0;
+
+
+window.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
+  var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+  
+  if (st > lastScrollTop) {
+    $(".nav").css('transform', "translateY(-100%)");
+  } else {
+    $(".nav").css('transform', "translateY(0%)");
+  }
+  lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}, false);
 navbar.classList.add("hidden");
 // onload add navbar
 window.onload = (event) => {
+  
   if (window.scrollY > 75) {
         navbar.classList.remove("hidden");
         $(".nav").css('transform', "translateY(-100%)");
@@ -39,6 +53,18 @@ window.onbeforeunload = function() {
 
   return undefined;
 }
+
+
+// animations load and unload
+
+window.addEventListener("load", function (event) {
+  $(".header-wrapper .text-wrapper .text .title").removeClass("hidden");
+  $(".header-wrapper .text-wrapper .text .title").addClass('animate__fadeInUp');
+  $(".header-wrapper .text-wrapper .text .subtitle").removeClass("hidden");
+  $(".header-wrapper .text-wrapper .text .subtitle").addClass('animate__fadeInUp');
+
+});
+
 window.addEventListener("scroll", function (event) {
    
     const distance = window.scrollY;
