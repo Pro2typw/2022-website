@@ -600,6 +600,7 @@ img {
   width: 231px;
   overflow: hidden;
 }
+
 .team .main-section .teamlist-wrapper .card .image img{
   position: relative;
   width: auto; /* used to be 214px */
@@ -800,7 +801,7 @@ color: var(--main-text-color);
 }
 .footer .main-footer .social-btns{
   font-size: 22px;
-    top: 1%;
+    top: 1%f;
     position: absolute;
     right: 26%;
     display: flex;

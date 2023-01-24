@@ -37,7 +37,7 @@
     SET TO FALSE FOR NO POPUP
   -->
   <script>
-    var popup = true;
+    var popup = false;
     window.addEventListener("load", function (event) {
       console.log("loaded");
       if (popup) {
@@ -221,27 +221,34 @@ width: 30%;" href="https://www.instagram.com/pro2type_21813/">Follow us on Insta
       <div class="carousel">
         <div class="arrows">
           <button class="arrow-2" onclick="moveRight();"><img src="/assets/Arrow 2.svg"></button>
-          <button class="arrow-1" onclick="moveLeft();"><img src="/assets/Arrow 1.svg"></button>
+          <button class="arrow-1" onclick=""><img src="/assets/Arrow 1.svg"></button>
         </div>
         <div class="robots">
-          <div class="default" id="Cone" data-position="1" id="one">
+          <div class="robot-slide" data-date="">
+            <p class="version animate__animated animate__fadeInUp">ROBOT_VERSION</p>
+            <p class="title animate__animated animate__fadeInUp">ROBOT_TITLE</p>
+           
+            <p class="description animate__animated animate__fadeInUp">ROBOT_SHORT_DESCRIPTION</p>
+            <div class="image-wrapper">
+              <img class="image" src="/assets/exampleimg.jpg">
+            </div>
+          </div>
+          <div class="robot-slide">
+            <p class="version animate__animated animate__fadeInUp">ROBOT_VERSION2</p>
+            <p class="title animate__animated animate__fadeInUp">ROBOT_TITLE</p>
+          
+            <p class="description animate__animated animate__fadeInUp">ROBOT_SHORT_DESCRIPTION</p>
+            <div class="image-wrapper">
+              <img class="image" src="/assets/exampleimg.jpg">
+            </div>
+          </div>
+          
+          <!--<div class="robot-slide" id="Ctwo" data-position="2">
             <p class="title">ROBOT_TITLE</p>
             <p class="version">ROBOT_VERSION</p>
             <img class="image" src="/assets/Checker.jpg">
             <p class="description">ROBOT_SHORT_DESCRIPTION</p>
-          </div>
-          <div class="focus" id="Ctwo" data-position="2">
-            <p class="title">ROBOT_TITLE</p>
-            <p class="version">ROBOT_VERSION</p>
-            <img class="image" src="/assets/Checker.jpg">
-            <p class="description">ROBOT_SHORT_DESCRIPTION</p>
-          </div>
-          <div class="default" id="Cthree" data-position="3">
-            <p class="title">ROBOT_TITLE</p>
-            <p class="version">ROBOT_VERSION</p>
-            <img class="image" src="/assets/Checker.jpg">
-            <p class="description">ROBOT_SHORT_DESCRIPTION</p>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>

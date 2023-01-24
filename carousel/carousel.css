@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .carousel{
     width:100%;
     height:1082px;
@@ -5,126 +6,83 @@
 }
 
 .robots{
-    display: flex;
-    /* or inline-flex */
     
     
     width: 100%;
     height: 1080px;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center; 
-    gap: 36%;
+    
+    gap: 0%;
 }
 
-.carousel .default{
+.carousel .robot-slide{
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.5s;
+    position: absolute;
+    top: 4%;
+    /*overflow: hidden;*/
     
-    transform: translateX(0%);
-    transition: all 0.5s ease;
-    width: 532px;
-    
-    height: 549px;
-    align-self: center;
-    top: 267px;
-    background: #111111;
 }
-.carousel .default .title{
-    padding-top: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    text-align: center;
-    
-    color: #FFFFFF;
-}
-.carousel .default .version {
-    padding-top: 20px;
-    font-family: 'Montserrat';
+.carousel .robot-slide .title{
+    position: relative;
+        width: 721px;
+        height: 89px;
+    left: 306px;
+        top: 563px;
+    z-index: 20;
+        font-family: 'Heebo';
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
+        font-size: 40px;
+        line-height: 48px;
+        
+            
+        
     
         color: #FFFFFF;
 }
-.carousel .default .image{
-    padding-top: 20px;
-    padding-left: 50px;
+.carousel .robot-slide .version {
+    position: relative;
+        width: 182px;
+        height: 32px;
+        left: 307px;
+        top: 571px;
+    z-index: 20;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
     
-    width: 481px;
-    height: 322px;
+        color: #FFFFFF;
+}
+.carousel .robot-slide .image{
+  width: 100%;
+  height: 100%;
     
 }
-.carousel .default .description {
-    padding-top: 20px;
-    padding-left: 50px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-
-    color: #FFFFFF;
+.carousel .robot-slide .image-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+    top: -215px;
 }
-.carousel .focus{
-    position: absolute;
-    width: 638px;
-    height: 658px;
-    align-self: auto;
+.carousel .robot-slide .description {
+    position: relative;
+        width: 560px;
+        height: 94px;
+        left: 307px;
+        top: 535px;
+        z-index: 20;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 29px;
     
-    top: 175px;
-    background: #111111;
-}
-
-
-.carousel .focus .title {
-    padding-top: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    text-align: center;
-
-    color: #FFFFFF;
-}
-
-.carousel .focus .version {
-    padding-top: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-
-    color: #FFFFFF;
-}
-
-.carousel .focus .image {
-    padding-top: 20px;
-    padding-left: 60px;
-    
-    width: 579px;
-    height: 414px;
-    
-
-}
-
-.carousel .focus .description {
-    padding-top: 20px;
-    padding-left: 60px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-
-    color: #FFFFFF;
+        color: #FFFFFF;
 }
 
 .carousel .arrows{
