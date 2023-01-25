@@ -1,3 +1,8 @@
+function cookie(name) {
+    let c = document.cookie.split('; ').find(cookie => cookie && cookie.startsWith(name + '='))
+    return c ? c.split('=')[1] : false;
+}
+
 
 
 // current slide counter
@@ -20,6 +25,30 @@ let curSlide = 0;
 // maximum number of slides
 let maxSlide = slides.length - 1;
 
+function goToSlide(slide){
+
+}
+
+function onLoadSlide(){
+
+    if (cookie('cookie-accepted') == "true") {
+       slideNum = cookie("slide");
+       console.log(slideNum);
+       if(!slideNum == undefined || !slideNum == null || slideNum == false){ 
+        curSlide = parseInt(slideNum); 
+       }
+       slides.forEach((slide, indx) => {
+            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+        });
+    }
+
+}
+
+window.addEventListener("load", function (event) {
+    onLoadSlide();
+});
+
+
 // add event listener and navigation functionality
 nextSlide.addEventListener("click", function () {
     // check if current slide is the last and reset current slide
@@ -33,6 +62,7 @@ nextSlide.addEventListener("click", function () {
     slides.forEach((slide, indx) => {
         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
     });
+    document.cookie = `slide=${curSlide}`;
 });
 
 // select next slide button
@@ -51,4 +81,5 @@ prevSlide.addEventListener("click", function () {
     slides.forEach((slide, indx) => {
         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
     });
+    document.cookie = `slide=${curSlide}`;
 });
