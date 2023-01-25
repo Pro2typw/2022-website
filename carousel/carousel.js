@@ -26,20 +26,23 @@ let curSlide = 0;
 let maxSlide = slides.length - 1;
 
 function goToSlide(slide){
-
+    curSlide = slide;
+    
+    slides.forEach((slide, indx) => {
+        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+    });
+    document.cookie = `slide=${curSlide}; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=Lax; Secure = true`;
 }
 
 function onLoadSlide(){
 
     if (cookie('cookie-accepted') == "true") {
        slideNum = cookie("slide");
-       console.log(slideNum);
-       if(!slideNum == undefined || !slideNum == null || slideNum == false){ 
-        curSlide = parseInt(slideNum); 
+       
+       if(!(slideNum == undefined || slideNum == null || slideNum == false)){ 
+           goToSlide(parseInt(slideNum));
        }
-       slides.forEach((slide, indx) => {
-            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-        });
+       
     }
 
 }
@@ -62,7 +65,9 @@ nextSlide.addEventListener("click", function () {
     slides.forEach((slide, indx) => {
         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
     });
-    document.cookie = `slide=${curSlide}`;
+    document.cookie = `slide=${curSlide}; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=Lax; Secure = false`;
+    
+    
 });
 
 // select next slide button
@@ -81,5 +86,7 @@ prevSlide.addEventListener("click", function () {
     slides.forEach((slide, indx) => {
         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
     });
-    document.cookie = `slide=${curSlide}`;
+    document.cookie = `slide=${curSlide}; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=Lax; Secure = false`;
+    
+    
 });
