@@ -121,5 +121,26 @@ function onScroll(event) {
 // q: how do I make a new git?
 // a: git init
 
+function gcd (a, b) {
+  return (b == 0) ? a : gcd (b, a%b);
+}
+var w = screen.width;
+var h = screen.height;
+var r = gcd(w, h);
+console.log("Aspect ratio: "+` ${w/r}:${h/r}`);
 
-
+function getScreen(w, h){
+  var r = gcd(w, h);
+  nOne = w/r;
+  nTwo = h/r;
+  if(nTwo > nOne){
+    return "mobile";
+  }
+  else if (nTwo < nOne){
+      return "desktop";
+    }
+  else{
+    return "other";
+  }
+}
+console.log(getScreen(screen.width, screen.height));

@@ -87,9 +87,9 @@
 
 .carousel .arrows{
     position: absolute;
-    width: 1862.06px;
+    width: 100%;
     height: 50px;
-    left: 32px;
+    left: 0%;
     top: 516px;
     z-index: 1990;
 }
@@ -97,10 +97,10 @@
     position: absolute;
     position: absolute;
     
-    left: 1838px;
+    right: 1%;
 }
 .arrows .arrow-1{
     position: absolute;
-    left: -11.3px;
+    left: 1%;
     top: 0px;
 }

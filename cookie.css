@@ -22,7 +22,7 @@
     letter-spacing: 0.0625rem;
     color: #f3f3f3;
     user-select: none;
-    z-index: -1;
+    z-index: 90000;
     text-align: center;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .cookie-popup-actions button {
-    color: orange;
+    color: rgb(73, 187, 111);
     border: none;
     background: none;
     font-family: inherit;

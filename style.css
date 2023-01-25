@@ -103,11 +103,12 @@ body {
 }
 .nav .inner .buttons{
   display: inline-flex;
-    height: 60%;
-    width: 29%;
-    position: absolute;
-    right: 35%;
-    top: 34%;
+  height: 60%;
+  width: 29%;
+  position: absolute;
+  transform: translateX(-112%);
+  right: 0%;
+  top: 15%;
 }
 .nav.scrolled {
  
