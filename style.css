@@ -809,3 +809,24 @@ color: var(--main-text-color);
     gap: 24%;
     color: var(--main-text-color);
 }
+
+
+
+.estregg {
+  
+  animation: animatedgradient 1s ease alternate infinite;
+  
+}
+
+
+@keyframes animatedgradient {
+  0% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform : scale(1.5);
+  }
+    100% {
+      transform: scale(1);
+    }
+}

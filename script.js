@@ -144,3 +144,123 @@ function getScreen(w, h){
   }
 }
 console.log(getScreen(screen.width, screen.height));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// easter eggs LMAO
+var hoverNumber = 0;
+$(".whdOMWQD").hover(
+  function () {
+    console.log(hoverNumber);
+    if(hoverNumber < 2){
+      console.log("mouseOn "+hoverNumber);
+    }
+    else{
+      console.log("EASTER EGG!");
+      $(".whdOMWQD").addClass("estregg");
+    }
+  }, function () {
+    console.log(hoverNumber);
+    if (hoverNumber < 2) {
+      hoverNumber++;
+      console.log("mouseOff "+hoverNumber);
+    }
+    else {
+      $(".whdOMWQD").removeClass("estregg");
+      console.log("EASTER EGG OFF!");
+      hoverNumber = 0;
+    }
+  }
+);
