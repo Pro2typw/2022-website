@@ -244,7 +244,7 @@ var hoverNumber = 0;
 $(".whdOMWQD").hover(
   function () {
     console.log(hoverNumber);
-    if(hoverNumber < 2){
+    if(hoverNumber < 5){
       console.log("mouseOn "+hoverNumber);
     }
     else{
@@ -253,7 +253,7 @@ $(".whdOMWQD").hover(
     }
   }, function () {
     console.log(hoverNumber);
-    if (hoverNumber < 2) {
+    if (hoverNumber < 5) {
       hoverNumber++;
       console.log("mouseOff "+hoverNumber);
     }
